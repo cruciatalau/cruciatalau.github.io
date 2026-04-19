@@ -219,7 +219,7 @@
 
   /* ========= COUNTDOWN ========= */
   #countdown {
-    background: #b3c8d1; /* colore azzurro pastello con punta di grigio */
+    background: #b3c8d1;
     padding: 60px 24px 50px;
     text-align: center;
   }
@@ -861,11 +861,11 @@
 
   <div class="card">
     <img src="assets/images/image2.jpeg" alt="Laura e Enrico" style="margin-bottom: 20px;" />
-    <p>Ci siamo conosciuti un po’ per caso alla fine del 2018, in un momento in cui nessuno dei due immaginava davvero quanto quell’incontro avrebbe cambiato le nostre vite. E fin da subito, senza quasi accorgercene, siamo diventati una presenza fondamentale l’uno per l’altra.</p>
+    <p>Ci siamo conosciuti un po' per caso alla fine del 2018, in un momento in cui nessuno dei due immaginava davvero quanto quell'incontro avrebbe cambiato le nostre vite. E fin da subito, senza quasi accorgercene, siamo diventati una presenza fondamentale l'uno per l'altra.</p>
 <br>
-<p>C’è una leggenda giapponese che racconta di un “filo rosso del destino” invisibile, che lega due persone destinate a incontrarsi prima o poi. Non sappiamo quando quel filo abbia iniziato a unirci, ma possiamo dire che, dal momento in cui ci siamo trovati, abbiamo sentito subito qualcosa di speciale, la sensazione di essere finalmente nel posto giusto.</p>
+<p>C'è una leggenda giapponese che racconta di un "filo rosso del destino" invisibile, che lega due persone destinate a incontrarsi prima o poi. Non sappiamo quando quel filo abbia iniziato a unirci, ma possiamo dire che, dal momento in cui ci siamo trovati, abbiamo sentito subito qualcosa di speciale, la sensazione di essere finalmente nel posto giusto.</p>
 
-<p>In questi anni abbiamo attraversato insieme momenti molto diversi: la distanza imposta dal periodo del Covid, che ci ha insegnato quanto fosse forte il desiderio di esserci l’uno per l’altra; la condivisione della quotidianità, con le sue piccole abitudini, i progetti condivisi, le risate e le sfide che ci ha posto la vita, affrontate mano nella mano. Abbiamo imparato a sostenerci nei momenti difficili, a crescere insieme e a dare ancora più valore a ogni momento felice.</p>
+<p>In questi anni abbiamo attraversato insieme momenti molto diversi: la distanza imposta dal periodo del Covid, che ci ha insegnato quanto fosse forte il desiderio di esserci l'uno per l'altra; la condivisione della quotidianità, con le sue piccole abitudini, i progetti condivisi, le risate e le sfide che ci ha posto la vita, affrontate mano nella mano. Abbiamo imparato a sostenerci nei momenti difficili, a crescere insieme e a dare ancora più valore a ogni momento felice.</p>
 <br>
 <p>Oggi, dopo sette anni insieme, siamo felici ed emozionati di condividere con voi una nuova tappa di questo viaggio: abbiamo deciso di sposarci! 🤍</p>
 </div>
@@ -966,9 +966,6 @@
 
 <div class="divider" style="margin: 0; padding: 0 24px;"><span>✦</span></div>
 
-
-
-
 <!-- FAQ -->
 <section class="section" style="padding-top: 40px;">
   <span style="display:block; text-align:center; font-size:28px; margin-bottom:12px; color: var(--olive); border: 2px solid var(--olive); width:44px; height:44px; line-height:40px; border-radius:50%; margin-left:auto; margin-right:auto;">?</span>
@@ -1002,27 +999,6 @@
         <span class="faq-chevron">∨</span>
       </div>
       <div class="faq-answer">Vogliamo che viviate il momento con noi. Durante la cerimonia religiosa e all'uscita dalla chiesa vi chiediamo di non usare il cellulare. Saranno presenti dei fotografi professionisti che si occuperanno del servizio fotografico con tutti gli invitati.</div>
-    </div>
-  </div>
-</section>
-
-<div class="divider" style="margin: 0; padding: 0 24px;"><span>✦</span></div>
-
-<!-- GIFTS -->
-<section id="gifts">
-  <img src="assets/images/heart.webp" alt="Pensieri e Regali" class="illustration">
-  <h2 class="section-title">Pensieri e Regali</h2>
-  <p>La vostra presenza è il regalo più grande che potremmo desiderare, ma se desiderate comunque contribuire al nostro viaggio di nozze o alla creazione dei nostri progetti futuri, vi ringraziamo di cuore per il vostro pensiero.</p>
-
-  <div class="gift-accordion" id="gift-accordion">
-    <div class="gift-accordion-header btn-submit" onclick="toggleGift()">
-      Contributo
-    </div>
-    <div class="gift-accordion-body">
-      <p>Se volete farci un contributo economico, potete farlo tramite bonifico bancario:</p>
-      <p style="margin-top:12px;"><strong>Intestatari:</strong> Bergamini Enrico, Cruciata Laura<br>
-      <strong>IBAN:</strong> IT39Z0503401753000000123290 <button onclick="copyIban()" style="margin-left: 8px; padding: 4px 8px; font-size: 12px; border: 1px solid #b3c8d1; border-radius: 4px; background: #b3c8d1; color: white; cursor: pointer; transition: all 0.2s;" onmouseover="this.style.background='#a0b8c1'" onmouseout="this.style.background='#b3c8d1'"><i class="fas fa-copy"></i> Copia</button><br>
-      <strong>Causale:</strong> Il tuo nome + Matrimonio</p>
     </div>
   </div>
 </section>
@@ -1065,7 +1041,6 @@
         <label class="form-label">Numero di invitati totale (compreso te)</label>
         <select id="guests" name="guests" class="form-input">
           <option value="" disabled selected>Seleziona</option>
-          <option value="0">0</option>
           <option value="1">1</option>
           <option value="2">2</option>
           <option value="3">3</option>
@@ -1118,11 +1093,31 @@
   </div>
 </section>
 
+<div class="divider" style="margin: 0; padding: 0 24px;"><span>✦</span></div>
+
+<!-- GIFTS -->
+<section id="gifts">
+  <img src="assets/images/heart.webp" alt="Pensieri e Regali" class="illustration">
+  <h2 class="section-title">Pensieri e Regali</h2>
+  <p>La vostra presenza è il regalo più grande che potremmo desiderare, ma se desiderate comunque contribuire al nostro viaggio di nozze o alla creazione dei nostri progetti futuri, vi ringraziamo di cuore per il vostro pensiero.</p>
+
+  <div class="gift-accordion" id="gift-accordion">
+    <div class="gift-accordion-header btn-submit" onclick="toggleGift()">
+      Contributo
+    </div>
+    <div class="gift-accordion-body">
+      <p>Se volete farci un contributo economico, potete farlo tramite bonifico bancario:</p>
+      <p style="margin-top:12px;"><strong>Intestatari:</strong> Bergamini Enrico, Cruciata Laura<br>
+      <strong>IBAN:</strong> IT39Z0503401753000000123290 <button onclick="copyIban()" style="margin-left: 8px; padding: 4px 8px; font-size: 12px; border: 1px solid #b3c8d1; border-radius: 4px; background: #b3c8d1; color: white; cursor: pointer; transition: all 0.2s;" onmouseover="this.style.background='#a0b8c1'" onmouseout="this.style.background='#b3c8d1'"><i class="fas fa-copy"></i> Copia</button><br>
+      <strong>Causale:</strong> Il tuo nome + Matrimonio</p>
+    </div>
+  </div>
+</section>
+
 <!-- FOOTER -->
 <footer>
   <span class="heart">♡</span>
   <p class="couple-name">Enrico & Laura</p>
-  <!-- <p class="made-by">Fatto con amore</p> -->
 </footer>
 
 <script>
@@ -1170,7 +1165,6 @@
   function copyIban() {
     const iban = 'IT39Z0503401753000000123290';
     navigator.clipboard.writeText(iban).then(() => {
-      // Optional: show feedback
       const button = event.target;
       const originalText = button.innerHTML;
       button.innerHTML = '<i class="fas fa-check"></i> Copiato!';
@@ -1195,59 +1189,59 @@
     });
   });
 
-  // Confetti animation using confetti.js library
+  // Confetti animation
   function createConfetti() {
-  const riceShape = confetti.shapeFromPath({
-    path: 'M 0 -10 A 3 10 0 1 1 0 10 A 3 10 0 1 1 0 -10 Z'
-  });
-
-  const duration = 1200;
-  const end = Date.now() + duration;
-
-  (function frame() {
-    confetti({
-      particleCount: 20,
-      angle: 60,
-      spread: 110,
-      startVelocity: 70,
-      origin: { x: 0, y: 0.7 },
-      colors: ['#ffffff', '#f8f8f8', '#f0f0f0', '#e8e8e8', '#f5f5f5'],
-      gravity: 0.7,
-      ticks: 50,
-      scalar: 1.4,
-      shapes: [riceShape]
+    const riceShape = confetti.shapeFromPath({
+      path: 'M 0 -10 A 3 10 0 1 1 0 10 A 3 10 0 1 1 0 -10 Z'
     });
 
-    confetti({
-      particleCount: 20,
-      angle: 120,
-      spread: 110,
-      startVelocity: 70,
-      origin: { x: 1, y: 0.7 },
-      colors: ['#ffffff', '#f8f8f8', '#f0f0f0', '#e8e8e8', '#f5f5f5'],
-      gravity: 0.7,
-      ticks: 50,
-      scalar: 1.4,
-      shapes: [riceShape]
-    });
+    const duration = 1200;
+    const end = Date.now() + duration;
 
-    confetti({
-      particleCount: 20,
-      spread: 360,
-      startVelocity: 80,
-      origin: { x: 0.5, y: 0.5 },
-      colors: ['#ffffff', '#f8f8f8', '#f0f0f0', '#e8e8e8', '#f5f5f5'],
-      gravity: 0.65,
-      ticks: 80,
-      scalar: 1.6,
-      shapes: [riceShape]
-    });
+    (function frame() {
+      confetti({
+        particleCount: 20,
+        angle: 60,
+        spread: 110,
+        startVelocity: 70,
+        origin: { x: 0, y: 0.7 },
+        colors: ['#ffffff', '#f8f8f8', '#f0f0f0', '#e8e8e8', '#f5f5f5'],
+        gravity: 0.7,
+        ticks: 50,
+        scalar: 1.4,
+        shapes: [riceShape]
+      });
 
-    if (Date.now() < end) {
-      requestAnimationFrame(frame);
-    }
-  })();
-}
+      confetti({
+        particleCount: 20,
+        angle: 120,
+        spread: 110,
+        startVelocity: 70,
+        origin: { x: 1, y: 0.7 },
+        colors: ['#ffffff', '#f8f8f8', '#f0f0f0', '#e8e8e8', '#f5f5f5'],
+        gravity: 0.7,
+        ticks: 50,
+        scalar: 1.4,
+        shapes: [riceShape]
+      });
+
+      confetti({
+        particleCount: 20,
+        spread: 360,
+        startVelocity: 80,
+        origin: { x: 0.5, y: 0.5 },
+        colors: ['#ffffff', '#f8f8f8', '#f0f0f0', '#e8e8e8', '#f5f5f5'],
+        gravity: 0.65,
+        ticks: 80,
+        scalar: 1.6,
+        shapes: [riceShape]
+      });
+
+      if (Date.now() < end) {
+        requestAnimationFrame(frame);
+      }
+    })();
+  }
 
   // RSVP submit
   document.getElementById('rsvpForm').addEventListener('submit', async (e) => {
@@ -1333,6 +1327,12 @@
       createConfetti();
       document.getElementById('rsvpForm').reset();
       document.getElementById('guests-group').style.display = 'none';
+
+      // Dopo 1 secondo, scorri alla sezione Pensieri e Regali
+      setTimeout(() => {
+        document.getElementById('gifts').scrollIntoView({ behavior: 'smooth' });
+      }, 1000);
+
     } catch (error) {
       alert('Si è verificato un errore. Riprova più tardi.');
     }
