@@ -1181,13 +1181,20 @@
   // Attending toggle
   document.querySelectorAll('input[name="attendance"]').forEach(radio => {
     radio.addEventListener('change', function() {
-      document.getElementById('guests-group').style.display =
-        this.value === 'yes' ? 'block' : 'none';
-      if (this.value === 'no') {
-        document.getElementById('guests').value = '';
+      const guestsSelect = document.getElementById('guests');
+      if (this.value === 'yes') {
+        document.getElementById('guests-group').style.display = 'block';
+        guestsSelect.required = true;
+      } else {
+        document.getElementById('guests-group').style.display = 'none';
+        guestsSelect.required = false;
+        guestsSelect.value = '';
       }
     });
   });
+
+  // Imposta required al caricamento (default è "sì parteciperò")
+  document.getElementById('guests').required = true;
 
   // Confetti animation
   function createConfetti() {
